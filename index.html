@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+<meta charset="UTF-8">
+<title>CMS Test</title>
+
+<style>
+body {
+    font-family: Arial;
+    background:#0f172a;
+    color:white;
+    text-align:center;
+}
+.container {
+    max-width:900px;
+    margin:auto;
+}
+button {
+    padding:12px;
+    margin:6px;
+    border:none;
+    border-radius:8px;
+    background:#22c55e;
+    color:white;
+    cursor:pointer;
+}
+.answers button {
+    width:100%;
+    display:block;
+}
+.question {
+    text-align:left;
+}
+.wrong {color:red;}
+.correct {color:lightgreen;}
+</style>
+
+</head>
+<body>
+
+<div class="container">
+
+<h1>CMS TEST</h1>
+
+<div id="menu">
+    <button onclick="startRange(0,50)">1–50</button>
+    <button onclick="startRange(50,100)">50–100</button>
+    <button onclick="startRange(100,139)">100–139</button>
+    <button onclick="randomTest()">🎲 Random 30</button>
+</div>
+
+<div id="quiz"></div>
+
+</div>
+
+<script src="questions.js"></script>
+<script src="app.js"></script>
+
+</body>
+</html>
